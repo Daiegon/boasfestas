@@ -1,0 +1,24 @@
+{
+  "name": "boasfestas",
+  "description": "Site Boas Festas Kit Alimentação",
+  "main": "gulpfile.js",
+  "authors": [
+    "Diego Rangel"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Daiegon/boasfestas",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-strings": "normalize#~1.0.4",
+    "bootstrap-css": "~3.3.4"
+  }
+}
