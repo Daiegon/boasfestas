@@ -1,8 +1,76 @@
 // VARIAVEIS
 @principal: #d91e48;
-@secundaria: #d91e48;
-@contraste: #d91e48;
+@secundaria: #8FC855;
+@contraste: #F7C72A;
 
 body{
 	background-color: @principal;
+	color: #fff;
+}
+
+#content{
+	position: relative;
+	z-index: 50;
+
+	.links{
+		padding: 400px 0 0 0;
+		.imagem{
+			position: relative;
+			padding-top: 20px;
+			span{
+				display: block;
+				padding: 10px;
+				//background-color: @secundaria;
+				text-transform: uppercase;
+				font-size: 1.8em;
+				font-weight: bold;
+				color: #fff;
+				text-decoration: none !important;
+			}
+			img{
+				border: 5px solid #fff;
+				border-radius: 20px;
+			}
+			&:hover{
+				span{
+					color: darken(@principal, 30%);
+				}
+				img{
+					border: 5px solid darken(@principal, 30%);
+				}
+			}
+		}
+	}
+	
+	footer{
+		padding: 15px 0;
+	}
+}
+
+
+.stripes{
+	position: absolute;
+	width: 100%;
+	height: 440px;
+	z-index: 20;
+	background: url(../images/stripes.png) no-repeat center;
+	top: 130px;
+}
+
+.degrade{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	top: -50px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d91e48+0,d91e48+95&amp;0+0,1+67 */
+background: -moz-linear-gradient(top,  rgba(217,30,72,0) 40%, rgba(217,30,72,1) 80%, rgba(217,30,72,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,30,72,0)), color-stop(80%,rgba(217,30,72,1)), color-stop(100%,rgba(217,30,72,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(217,30,72,0) 40%,rgba(217,30,72,1) 80%,rgba(217,30,72,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(217,30,72,0) 40%,rgba(217,30,72,1) 80%,rgba(217,30,72,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(217,30,72,0) 40%,rgba(217,30,72,1) 80%,rgba(217,30,72,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(217,30,72,0) 40%,rgba(217,30,72,1) 80%,rgba(217,30,72,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d91e48', endColorstr='#d91e48',GradientType=0 ); /* IE6-9 */
+	
 }
