@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<title>Cesta Básica de Natal e Ano Novo - Boas Festas 2015 | Kit Alimentação</title>
+	<title>Kits de Natal e Ano Novo - Kit Alimentação Cestas Básicas</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, inicial-scale=1, maximum-scale=1, user-scalable=no"/>
@@ -9,19 +9,23 @@
 	<meta name="keywords" content="Cesta Básica, Cesta básica Rj, Cestas Básicas Preço, Kits de Natal">
 	<meta name="author" content="Kit Alimentação">
 
-	<meta property="og:url"          content="http://www.kitalimentacao.com.br/boasfestas/familia/" />
-	<meta property="og:type"         content="website" />
-	<meta property="og:title"        content="Cestas de Natal e Ano Novo" />
-	<meta property="og:description"  content="Kits Boas Festas 2015 - Kit Alimentação" />
-	<meta property="og:image"        content="http://www.kitalimentacao.com.br/2014/wp-content/uploads/2015/01/popup.jpg" />
+	<meta property="og:url"         content="http://www.kitalimentacao.com.br/boasfestas/familia/" />
+	<meta property="og:type"        content="website" />
+	<meta property="og:title"       content="Cestas Especiais de Natal e Ano Novo" />
+	<meta property="og:description" content="Kits Boas Festas 2015 - Kit Alimentação" />
+	<meta property="og:image"       content="http://www.kitalimentacao.com.br/2014/wp-content/uploads/2015/01/popup.jpg" />
+
+	<meta property="fb:admins" content="100001906289208"/>
+	<!-- <meta property="fb:app_id" content="556118257876433" /> -->
 	
 	<!-- Android Lolipop Theme Color -->
 	<meta name="theme-color" content="#d91e48">
 
 	<link rel="stylesheet" href="../source/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../source/css/style.css">
-		
-
+	<link rel="stylesheet" href="../source/css/familia.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
 	<!-- Facebook Pixel Code -->
 	<script>
 	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -37,190 +41,165 @@
 	src="https://www.facebook.com/tr?id=819026031517306&ev=PageView&noscript=1"
 	/></noscript>
 	<!-- End Facebook Pixel Code -->
-
-	<style type="text/css">
-		body{
-			background-color: #fff;
-			background-image:url('../source/images/cesta.jpg');
-			background-position: center 50px;
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 350px;
-			color: #bd1a47;
-		}
-		
-		#content .links{
-			padding-top: 250px;
-		}
-		hgroup{
-			text-transform: uppercase;
-		}
-		h1{
-			margin: 0 0 20px 0;
-			font-weight: bold;
-		}
-		h2{
-			margin: 0;
-		}
-		
-		h3{
-			margin: 0;
-			padding: 10px;
-			background-color: #f7c72a;
-			color: #850d28;
-			font-weight: bolder;
-			border-radius: 5px;
-			-moz-border-radius: 5px;
-			-webkit-border-radius: 5px;
-			-o-border-radius: 5px;
-		}
-
-		.aviso{
-			font-size: 18px;
-			text-transform: uppercase;
-		}
-
-
-		.box{
-			background-color: #850d28;
-			padding: 15px 5%;
-			margin: 0 0 15px 0;
-		}
-
-		.pol{
-			color: #fff;
-		}
-		
-		.text-danger{
-			color:  #f7c72a;
-			text-transform: uppercase;
-		}
-		
-		.wpp2{
-			display: none;
-		}
-		.fb2{
-			display: none;
-		}
-
-		.fixo{
-			width: 100%;
-			text-align: center;
-			position: absolute;
-			top: 330px;
-			font-size: 50px;
-			z-index: 999;
-		}
-		
-		.blink{
-		    animation: blinker 1.5s linear infinite;
-		}
-
-		.blinka{
-		    animation: blinker 1.5s linear;
-		    -webkit-animation-iteration-count: 5; /* Chrome, Safari, Opera */
-    		animation-iteration-count: 5;
-		}
-
-
-		@keyframes blinker {  
-		  50% { opacity: 0.0; }
-		}
-		
-		.icon{
-			width: 32px; height: 32px;
-			display: inline-block;
-			margin: 0 10px 0 0;
-			background-image: url('../source/images/sprite.png');
-		}
-		.icon-wpp{
-			background-position: -32px 0;
-		}
-
-		.icon-tel{
-			background-position: 32px 0;	
-		}
-
-		@media (min-width: 960px) {
-			#content .links{
-				padding-top: 30% !important;
-			}
-			.wpp{
-				display: none;
-			}
-			.wpp2{
-				display: block;
-			}
-			.fb{
-				display: none;
-			}
-			.fb2{
-				display: block;
-			}
-				
-		}
-
-		@media (min-width: 1200px) {
-			body{
-				background-size: contain !important;
-				height: 500px !important;
-			}
-			#content .links{
-				padding-top: 25% !important;
-			}
-		}
-	</style>
 </head>
 <body>
-
-	<div class="blinka fixo"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></div>
 	
-	<div class="container" id="content">
-		<div class="row">
-			<div class="col-lg-12 logo text-center">
-				<img src="../source/images/logo-kitalimentacao.png" alt="">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=556118257876433";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
+	<div class="container" id="content">
+		<header id="header">
+			<div class="row">
+				<div class="col-lg-12 logo text-center">
+					<img src="../source/images/logo-kitalimentacao.png" alt="Kit Alimentação" >
+				</div>
+				<!-- /.col-lg-12 -->
+
+				<div class="blink fixo">
+					<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+				</div>
 			</div>
-			<!-- /.col-lg-12 -->
-		</div>
-		<!-- /.row -->
-		<div class="row links">
-			<hgroup class="text-center">
-				<h2>Cesta Básica de</h2>
-				<h1>Natal e Ano Novo</h1>
-			</hgroup>
-			<div class="col-sm-6">
-				<div class="box text-center">
-					<a href="intent://send/5521964299425#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="btn btn-lg btn-success wpp">
-						<span class="icon icon-wpp"></span>ATENDIMENTO VIA WHATSAPP
+			<!-- /.row -->
+		</header>
+		<!-- /#header -->
+
+		<main id="main">
+			<div class="row">
+				<div class="col-lg-12 text-center titulo">
+					<hgroup>
+						<h2>KITS ESPECIAIS DE</h2>
+						<h1>NATAL E ANO NOVO</h1>
+					</hgroup>
+
+					<hr>
+
+					<h3>
+						São 4 Composições para sua mesa de Final de Ano, 
+						<strong>CONFIRA ABAIXO</strong>
+						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+					</h3>
+				</div>
+				<!-- /.col-lg-12 -->
+
+				<div class="col-sm-6 text-center">
+					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
+					data-cesta="feliz"
+					data-titulo="Kit Feliz"
+					data-itens="31"
+					data-preco="252,39"
+					onclick="ga('send', 'event', 'link','click', 'Kit Feliz');">
+						<p>Kit Feliz <small>31 itens</small></p>
+
+
+						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						ver cesta
 					</a>
-					<a href="#" class="btn btn-lg btn-success wpp2">
-						<span class="icon icon-wpp"></span> &raquo; 21 96429-9425
+					<!-- /.cesta -->
+				</div>
+				<!-- /.col-sm-6 -->
+				<div class="col-sm-6 text-center">
+					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
+					data-cesta="festa-01"
+					data-titulo="Kit festa 01"
+					data-itens="34"
+					data-preco="283,18"
+					onclick="ga('send', 'event', 'link','click', 'Kit Festa 01');">
+						<p>Kit Festa 01 <small>34 itens</small></p>
+
+						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						ver cesta
 					</a>
-					<div class="cleafix"></div>
-					<br>
-					<h3><span class="icon icon-tel"></span>(21) 2751-0214 / 3755-0295</h3>
-					<div class="cleafix"></div>
-					<br>
-					<a href="http://www.facebook.com/messages/thread/1431487607152407" class="btn btn-lg btn-primary fb">
-						<span class="icon icon-fb"></span>MENSAGEM VIA FACEBOOK
+					<!-- /.cesta -->
+				</div>
+				<!-- /.col-sm-6 -->
+				<div class="col-sm-6 text-center">
+					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
+					data-cesta="festa-02"
+					data-titulo="Kit Festa 02"
+					data-itens="34"
+					data-preco="287,75"
+					onclick="ga('send', 'event', 'link','click', 'Kit Festa 02');">
+						<p>Kit Festa 02 <small>34 itens</small></p>
+
+
+						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						ver cesta
 					</a>
-					<a href="http://www.facebook.com/cestaskitalimentacao" target="_blank" class="btn btn-lg btn-primary fb2">
-						<span class="icon icon-fb"></span>ENVIAR MENSAGEM VIA FACEBOOK
+					<!-- /.cesta -->
+				</div>
+				<!-- /.col-sm-6 -->
+				<div class="col-sm-6 text-center">
+					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
+					data-cesta="especial"
+					data-titulo="Kit Especial"
+					data-itens="36"
+					data-preco="328,93"
+					onclick="ga('send', 'event', 'link','click', 'Kit Especial');">
+						<p>Kit Especial <small>36 itens</small></p>
+
+						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						ver cesta
 					</a>
-                </div>
+					<!-- /.cesta -->
+				</div>
+				<!-- /.col-sm-6 -->
 			</div>
-			<div class="col-sm-5 text-center">
-				<h1>ENTRE EM CONTATO</h1>
-				<h2>PARA SABER A TABELA DE CESTAS COM PREÇOS</h2>
-				<!-- <h3>27 DE NOVEMBRO</h3>				 -->
-				<hr>
-				<p class="aviso">fale conosco e já garanta Vantagens</p>
-				<hr>				
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<a href="#pagamento" class="bloco pagamento portfolio-link" data-toggle="modal">
+						<p><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Formas de Pagamento</p>
+					</a>
+					<!-- /.pagamento -->
+				</div>
+				<!-- /.col-sm-4 -->
+				<div class="col-sm-4 text-center">
+					<a href="#entrega" class="bloco entrega portfolio-link" data-toggle="modal">
+						<p><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Entrega em Domicílio</p>
+					</a>
+					<!-- /.pagamento -->
+				</div>
+				<!-- /.col-sm-4 -->
+				<div class="col-sm-4 text-center">
+					<a href="#atendimento" class="bloco atendimento portfolio-link" data-toggle="modal">
+						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Fale Conosco</p>
+					</a>
+					<!-- /.pagamento -->
+				</div>
+				<!-- /.col-sm-4 -->
 			</div>
-		</div>
-			
-			
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="compartilha text-center">
+						<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+							<strong>Quer Ganhar Descontos?</strong></p>
+						<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
+						<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
+							ENVIAR VIA WHATSAPP
+						</a>
+						<div class="cleafix"></div>
+						<br>
+						<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary" onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
+							COMPARTILHAR NO FACEBOOK
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="fb-comments" data-href="http://www.kitalimentacao.com.br/boasfestas/familia/" data-numposts="10"></div>
+			</div>
+			<!-- /.row -->
+		</main>
+		<!-- /#main -->
+
 		<footer>
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -230,10 +209,331 @@
 		</footer>
 	</div>
 	<!-- /.container -->
-	
-	<!--<script type="text/javascript" src="../source/js/scripts.min.js"></script>-->
 
-    <script>
+	<!-- Portfolio Modals -->
+	<div class="portfolio-modal modal fade" id="cesta" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-content corCesta">
+	        <div class="close-modal" data-dismiss="modal">
+				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+				  FECHAR
+	        </div> 
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="modal-body">
+	                    	<div class="titulo-cesta">
+		                        <h2>
+		                        	<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+		                        	<p></p>
+		                        </h2>
+		                        <p class="itens"></p>
+	                    	</div>
+
+	                        <div class="seta blink">
+								<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+							</div>
+							
+	                        <hr class="hr2">
+	                        <ul class="tabela-cesta">
+	                        	
+	                        </ul>
+							
+							<div class="valores">
+								<p class="preco"></p>
+								<p class="">5% de Desconto para pagamento à Vista</p>
+							</div>
+							
+							<p class="descricao destaca">As Vendas terão início a partir do Dia 07 de Dezembro</p>
+
+	                        <div class="aviso">
+	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> ATENÇÃO</h3>
+	                        	<p>Todas as 4 Cestas, possuem <strong>OS MESMOS itens de Natal e Bebidas</strong>  em suas Composições.</p>
+	                        	<p>O que diferencia uma da outra são as Carnes e Frios.</p>
+	                        </div>
+
+	                        <div class="duvidas">
+	                        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Tire Suas Dúvidas</h4>
+
+	                        	<ul>
+	                        		<li>
+	                        			<a href="#pagamento" class="link" data-toggle="modal">
+											<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> VER FORMAS DE PAGAMENTO
+										</a>
+	                        		</li>
+	                        		<li>
+	                        			<a href="#entrega" class="link" data-toggle="modal">
+											<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> VER ENTREGA EM DOMICÍLIO
+										</a>
+	                        		</li>
+	                        		<li>
+	                        			<a href="#atendimento" class="link" data-toggle="modal">
+											<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> FALE COM A GENTE
+										</a>
+	                        		</li>
+	                        	</ul>
+	                        </div>
+
+	                        <div class="compartilha">
+								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+									<strong>Quer Ganhar Descontos?</strong></p>
+								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
+								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
+									ENVIAR VIA WHATSAPP
+								</a>
+								<div class="cleafix"></div>
+								<br>
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
+									COMPARTILHAR NO FACEBOOK
+								</a>
+							</div>
+
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- container MODAL -->
+	        <div class="close-modal" data-dismiss="modal">
+			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+			  FECHAR
+        	</div>
+	    </div>
+	</div>
+	<!-- CESTA -->
+
+	<!-- PAGAMENTO -->
+	<div class="portfolio-modal modal fade" id="pagamento" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-content corPagamento">
+	        <div class="close-modal" data-dismiss="modal">
+				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+				  FECHAR
+	        </div> 
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="modal-body">
+	                    	<div class="titulo-cesta">
+		                        <h2>
+		                        	<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+		                        	<p>FORMAS DE PAGAMENTO</p>
+		                        </h2>
+		                        <p class="descricao">Aceitamos como Pagamento, todas as formas Abaixo:</p>
+	                    	</div>
+							
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/sodexo.jpg" alt="sodexo" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/pagseguro.jpg" alt="pagseguro" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/boleto.jpg" alt="boleto" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/visa.jpg" alt="visa" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/master.jpg" alt="master" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/elo.jpg" alt="elo" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<img src="../source/images/bancos.jpg" alt="bancos" class="img-responsive">
+							</div>
+							<div class="col-sm-4 formas-pagamento">
+								<a href="../source/images/pagseguro-total.jpg" class="link">
+									<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> VER TODAS AS OPÇÕES ONLINE
+								</a>
+							</div>
+
+							<div class="clearfix"></div>
+							
+							<p class="descricao destaca">As Vendas terão início a partir do Dia 07 de Dezembro</p>
+
+							<div class="aviso dark">
+	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> OBSERVAÇÕES</h3>
+	                        	<p>Só entregaremos as Cestas seguindo as condições abaixo:</p>
+	                        	<ol>
+	                        		<li><strong>PARA PAGAMENTO VIA SODEXO:</strong>  Será Combinado com o Cliente o dia e hora da entrega e também para passar o Cartão Sodexo.</li>
+	                        		<li><strong>PARA PAGAMENTO ONLINE:</strong>  Apenas pelo PagSeguro e mesmo assim, confirmando a compra.</li>
+	                        		<li><strong>PARA PAGAMENTO A VISTA:</strong> Será Combinado com o Cliente o dia e hora da entrega.</li>
+	                        		<li><strong>PARA PAGAMENTO VIA DEPÓSITO:</strong> Confirmação da compra apenas pelo envio do Comprovante de Transferência para nosso email ou WhatsApp.</li>
+	                        	</ol>
+	                        </div>
+							
+							<div class="compartilha">
+								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+									<strong>Quer Ganhar Descontos?</strong></p>
+								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
+								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
+									ENVIAR VIA WHATSAPP
+								</a>
+								<div class="cleafix"></div>
+								<br>
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
+									COMPARTILHAR NO FACEBOOK
+								</a>
+							</div>
+
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- container MODAL -->
+	        <div class="close-modal" data-dismiss="modal">
+			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+			  FECHAR
+        	</div>
+	    </div>
+	</div>
+	<!-- PAGAMENTO -->
+
+	
+	<!-- ENTREGA -->
+	<div class="portfolio-modal modal fade" id="entrega" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-content corEntrega">
+	        <div class="close-modal" data-dismiss="modal">
+				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+				  FECHAR
+	        </div> 
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="modal-body">
+	                    	<div class="titulo-cesta">
+		                        <h2>
+		                        	<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+		                        	<p>entrega em domicílio</p>
+		                        </h2>
+		                        <p class="descricao">Após a Confirmação da Compra pelos meios de pagamento, entraremos em contato para informar a Data e Hora da Entrega.</p>
+	                    	</div>
+							
+							<ul class="lista-descricao">
+								<li>
+									<p>DATAS</p>
+									<p class="descricao">Estamos nos Organizando para Entregar entre os dias 19 à 23 de Dezembro</p>
+								</li>
+								<li>
+									<p>ÁREAS DE ENTREGA</p>
+									<p class="descricao">Baixada Fluminense e Regiões próximas adjacentes.</p>
+								</li>
+								<li>
+									<p>SOBRE A NOSSA EMPRESA</p>
+									<p class="descricao">Nossa empresa já está há 20 anos no mercado atendendo aposentados e pensionistas, empresas, o governo e, neste ano de 2015, expandimos a atuação de nossos serviços e produtos para atender a todos os Consumidores.</p>
+								</li>
+							</ul>
+							
+							<div class="clearfix"></div>					
+
+							<div class="aviso dark">
+	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> DICA</h3>
+	                        	<p>Compartilhe com seus amigos, assim você faz com que sua região seja atendida e ainda CONCORRE A DESCONTOS</p>
+	                        </div>
+							
+							<div class="clearfix"></div>	
+
+							<div class="compartilha">
+								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+									<strong>Quer Ganhar Descontos?</strong></p>
+								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
+								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
+									ENVIAR VIA WHATSAPP
+								</a>
+								<div class="cleafix"></div>
+								<br>
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
+									COMPARTILHAR NO FACEBOOK
+								</a>
+							</div>
+
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- container MODAL -->
+	        <div class="close-modal" data-dismiss="modal">
+			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+			  FECHAR
+        	</div>
+	    </div>
+	</div>
+	<!-- ENTREGA -->
+
+	<!-- atendimento -->
+	<div class="portfolio-modal modal fade" id="atendimento" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-content corAtendimento">
+	        <div class="close-modal" data-dismiss="modal">
+				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+				  FECHAR
+	        </div> 
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="modal-body">
+	                    	<div class="titulo-cesta">
+		                        <h2>
+		                        	<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+		                        	<p>Fale com a gente</p>
+		                        </h2>
+		                        <p class="descricao destaca">Atendimento via Telefone fixo de Segunda a Sexta das 08h às 17h</p>
+	                    	</div>
+							
+							<ul class="lista-descricao">
+								<li>
+									<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> TELEFONES - 021</p>
+									<p class="descricao">2751-0214</p>
+									<p class="descricao">3755-0295</p>
+									<p class="descricao">2651-2304</p>
+								</li>
+								<li>
+									<p><i class="fa fa-whatsapp"></i> WHATSAPP</p>
+									<p class="descricao">Clique no Botão abaixo para nos Chamar no WhatsApp</p>
+									<a href="intent://send/5521964299425#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="btn btn-lg btn-success wpp" onclick="ga('send', 'event', 'link','click', 'Chamou no WhatsApp');">
+										<i class="fa fa-whatsapp"></i>CONVERSAR NO WHATSAPP
+									</a>
+								</li>
+								<li>
+									<p><i class="fa fa-facebook-official"></i> NOSSA PÁGINA NO FACEBOOK</p>
+									<p class="descricao">Se comunique também pelo nosso Facebook, clicando abaixo você irá para nossa Página </p>
+									<a href="http://www.facebook.com/messages/thread/1431487607152407" class="btn btn-lg btn-primary fb"  onclick="ga('send', 'event', 'link','click', 'Chamou na Página do Facebook');">
+										<i class="fa fa-facebook-official"></i>MENSAGEM VIA FACEBOOK
+									</a>
+								</li>
+							</ul>
+														
+							<div class="clearfix"></div>	
+
+							<div class="compartilha">
+								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+									<strong>Quer Ganhar Descontos?</strong></p>
+								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
+								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
+									ENVIAR VIA WHATSAPP
+								</a>
+								<div class="cleafix"></div>
+								<br>
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
+									COMPARTILHAR NO FACEBOOK
+								</a>
+							</div>
+
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- container MODAL -->
+	        <div class="close-modal" data-dismiss="modal">
+			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+			  FECHAR
+        	</div>
+	    </div>
+	</div>
+	<!-- atendimento -->
+
+
+	<script type="text/javascript" src="../source/js/scripts.min.js"></script>
+
+	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -241,8 +541,7 @@
 
 	  ga('create', 'UA-27285313-4', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
-
+	
 </body>
 </html>
