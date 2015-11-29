@@ -32,7 +32,6 @@
 
 	fbq('init', '819026031517306');
 	fbq('track', "PageView");
-	fbq('track', 'ViewContent');
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=819026031517306&ev=PageView&noscript=1"
@@ -41,34 +40,39 @@
 
 	<style type="text/css">
 		body{
-			background-image:url('../source/images/familia.jpg');
-			background-position: center top;
+			background-color: #fff;
+			background-image:url('../source/images/cesta.jpg');
+			background-position: center 50px;
 			background-repeat: no-repeat;
 			background-size: cover;
-			height: 570px;
+			height: 350px;
+			color: #bd1a47;
 		}
 		
 		#content .links{
-			padding-top: 320px;
+			padding-top: 250px;
+		}
+		hgroup{
+			text-transform: uppercase;
+		}
+		h1{
+			margin: 0 0 20px 0;
+			font-weight: bold;
+		}
+		h2{
+			margin: 0;
 		}
 		
-		h2{
-			letter-spacing: 3px;
-		}
 		h3{
+			margin: 0;
 			padding: 10px;
 			background-color: #f7c72a;
 			color: #850d28;
 			font-weight: bolder;
-			border-radius: 30px;
-			-moz-border-radius: 30px;
-			-webkit-border-radius: 30px;
-			-o-border-radius: 30px;
-		}
-		
-		.load{
-			text-align: center;
-			display: none;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
 		}
 
 		.aviso{
@@ -80,6 +84,7 @@
 		.box{
 			background-color: #850d28;
 			padding: 15px 5%;
+			margin: 0 0 15px 0;
 		}
 
 		.pol{
@@ -90,11 +95,69 @@
 			color:  #f7c72a;
 			text-transform: uppercase;
 		}
+		
+		.wpp2{
+			display: none;
+		}
+		.fb2{
+			display: none;
+		}
+
+		.fixo{
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			top: 330px;
+			font-size: 50px;
+			z-index: 999;
+		}
+		
+		.blink{
+		    animation: blinker 1.5s linear infinite;
+		}
+
+		.blinka{
+		    animation: blinker 1.5s linear;
+		    -webkit-animation-iteration-count: 5; /* Chrome, Safari, Opera */
+    		animation-iteration-count: 5;
+		}
+
+
+		@keyframes blinker {  
+		  50% { opacity: 0.0; }
+		}
+		
+		.icon{
+			width: 32px; height: 32px;
+			display: inline-block;
+			margin: 0 10px 0 0;
+			background-image: url('../source/images/sprite.png');
+		}
+		.icon-wpp{
+			background-position: -32px 0;
+		}
+
+		.icon-tel{
+			background-position: 32px 0;	
+		}
 
 		@media (min-width: 960px) {
 			#content .links{
-				padding-top: 45% !important;
+				padding-top: 30% !important;
 			}
+			.wpp{
+				display: none;
+			}
+			.wpp2{
+				display: block;
+			}
+			.fb{
+				display: none;
+			}
+			.fb2{
+				display: block;
+			}
+				
 		}
 
 		@media (min-width: 1200px) {
@@ -103,61 +166,56 @@
 				height: 500px !important;
 			}
 			#content .links{
-				padding-top: 45% !important;
+				padding-top: 25% !important;
 			}
 		}
 	</style>
 </head>
 <body>
+
+	<div class="blinka fixo"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></div>
 	
 	<div class="container" id="content">
 		<div class="row">
 			<div class="col-lg-12 logo text-center">
 				<img src="../source/images/logo-kitalimentacao.png" alt="">
+
 			</div>
 			<!-- /.col-lg-12 -->
 		</div>
 		<!-- /.row -->
 		<div class="row links">
-			<div class="col-sm-5 col-sm-offset-1 ">
-				<h4>Informe seu Nome e WhatsApp abaixo:</h4>
-				<div class="box">
-					<form name="sentMessage" id="contactForm" novalidate>
-	                    <div class="row control-group">
-	                        <div class="form-group col-xs-12 floating-label-form-group controls">
-	                            <label>Nome: </label>
-	                            <input type="text" class="form-control" placeholder="Nome" id="nome" required data-validation-required-message="Por favor digite o nome.">
-	                            <p class="help-block text-danger"></p>
-	                        </div>
-	                    </div>
-	                    <div class="row control-group">
-	                        <div class="form-group col-xs-12 floating-label-form-group controls">
-	                            <label>WhatsApp</label>
-	                            <input type="tel" class="form-control" placeholder="WhatsApp" id="celular" required data-validation-required-message="Por favor informe o Número." >
-	                            <p class="help-block text-danger"></p>
-	                        </div>
-	                    </div>
-	                    <br>
-	                    
-	                    <div class="row">
-	                        
-	                        <div class="load">
-	                        	<img src="../source/images/loading.gif" alt=""> 
-	                        </div>
-
-	                        <div class="form-group col-xs-12">
-	                            <button type="submit" id="cliqueCadastrar" class="btn btn-success btn-lg">Cadastrar meu Contato</button>
-	                        </div>
-	                    </div>
-	                </form>
-	                <p><small>Visite nossa <a href="http://www.kitalimentacao.com.br/politica-de-privacidade.html" title="Política de Privacidade" class="pol">Política de Privacidade</a> para saber sobre o cadastro de seus dados em nosso site</small></p>
+			<hgroup class="text-center">
+				<h2>Cesta Básica de</h2>
+				<h1>Natal e Ano Novo</h1>
+			</hgroup>
+			<div class="col-sm-6">
+				<div class="box text-center">
+					<a href="intent://send/5521964299425#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="btn btn-lg btn-success wpp">
+						<span class="icon icon-wpp"></span>ATENDIMENTO VIA WHATSAPP
+					</a>
+					<a href="#" class="btn btn-lg btn-success wpp2">
+						<span class="icon icon-wpp"></span> &raquo; 21 96429-9425
+					</a>
+					<div class="cleafix"></div>
+					<br>
+					<h3><span class="icon icon-tel"></span>(21) 2751-0214 / 3755-0295</h3>
+					<div class="cleafix"></div>
+					<br>
+					<a href="http://www.facebook.com/messages/thread/1431487607152407" class="btn btn-lg btn-primary fb">
+						<span class="icon icon-fb"></span>MENSAGEM VIA FACEBOOK
+					</a>
+					<a href="http://www.facebook.com/cestaskitalimentacao" target="_blank" class="btn btn-lg btn-primary fb2">
+						<span class="icon icon-fb"></span>ENVIAR MENSAGEM VIA FACEBOOK
+					</a>
                 </div>
 			</div>
 			<div class="col-sm-5 text-center">
-				<h2>LANÇAMENTO</h2>
-				<h3>23 DE NOVEMBRO</h3>				
+				<h1>ENTRE EM CONTATO</h1>
+				<h2>PARA SABER A TABELA DE CESTAS COM PREÇOS</h2>
+				<!-- <h3>27 DE NOVEMBRO</h3>				 -->
 				<hr>
-				<p class="aviso">Seja avisado quando as informações saírem</p>
+				<p class="aviso">fale conosco e já garanta Vantagens</p>
 				<hr>				
 			</div>
 		</div>
@@ -173,9 +231,7 @@
 	</div>
 	<!-- /.container -->
 	
-	<script type="text/javascript" src="../source/js/scripts.min.js"></script>
-	<script src="../source/js/jqBootstrapValidation.js"></script>
-    <script src="../source/js/contact_me_familia.js"></script>
+	<!--<script type="text/javascript" src="../source/js/scripts.min.js"></script>-->
 
     <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
