@@ -213,9 +213,9 @@
 	<!-- Portfolio Modals -->
 	<div class="portfolio-modal modal fade" id="cesta" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content corCesta">
-	        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-				  FECHAR
+	        <div class="close-modal fechar" data-dismiss="modal">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+				  VOLTAR
 	        </div> 
 	        <div class="container">
 	            <div class="row">
@@ -234,10 +234,19 @@
 							</div>
 							
 	                        <hr class="hr2">
-	                        <ul class="tabela-cesta">
+	                        <ul class="tabela-cesta carnes">
 	                        	
 	                        </ul>
 							
+							<div class="close-modal ver-lista">
+								<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> 
+								VER ITENS PADRÃO
+							</div>
+
+	                        <ul class="tabela-cesta padrao">
+	                        	
+	                        </ul>
+
 							<div class="valores">
 								<p class="preco"></p>
 								<p class="">5% de Desconto para pagamento à Vista</p>
@@ -248,7 +257,7 @@
 	                        <div class="aviso">
 	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> ATENÇÃO</h3>
 	                        	<p>Todas as 4 Cestas, possuem <strong>OS MESMOS itens de Natal e Bebidas</strong>  em suas Composições.</p>
-	                        	<p>O que diferencia uma da outra são as Carnes e Frios.</p>
+	                        	<p><strong>O QUE DIFERENCIA UMA DA OUTRA SÃO AS CARNES E FRIOS</strong></p>
 	                        </div>
 
 	                        <div class="duvidas">
@@ -292,9 +301,9 @@
 	            </div>
 	        </div>
 	        <!-- container MODAL -->
-	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-			  FECHAR
+	        <div class="close-modal fechar" data-dismiss="modal">
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+			  VOLTAR
         	</div>
 	    </div>
 	</div>
@@ -304,8 +313,8 @@
 	<div class="portfolio-modal modal fade" id="pagamento" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content corPagamento">
 	        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-				  FECHAR
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+				  VOLTAR
 	        </div> 
 	        <div class="container">
 	            <div class="row">
@@ -381,8 +390,8 @@
 	        </div>
 	        <!-- container MODAL -->
 	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-			  FECHAR
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+			  VOLTAR
         	</div>
 	    </div>
 	</div>
@@ -393,8 +402,8 @@
 	<div class="portfolio-modal modal fade" id="entrega" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content corEntrega">
 	        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-				  FECHAR
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+				  VOLTAR
 	        </div> 
 	        <div class="container">
 	            <div class="row">
@@ -452,8 +461,8 @@
 	        </div>
 	        <!-- container MODAL -->
 	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-			  FECHAR
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+			  VOLTAR
         	</div>
 	    </div>
 	</div>
@@ -463,8 +472,8 @@
 	<div class="portfolio-modal modal fade" id="atendimento" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content corAtendimento">
 	        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-				  FECHAR
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+				  VOLTAR
 	        </div> 
 	        <div class="container">
 	            <div class="row">
@@ -486,14 +495,14 @@
 									<p class="descricao">2651-2304</p>
 								</li>
 								<li>
-									<p><i class="fa fa-whatsapp"></i> WHATSAPP</p>
+									<p>WHATSAPP</p>
 									<p class="descricao">Clique no Botão abaixo para nos Chamar no WhatsApp</p>
 									<a href="intent://send/5521964299425#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="btn btn-lg btn-success wpp" onclick="ga('send', 'event', 'link','click', 'Chamou no WhatsApp');">
 										<i class="fa fa-whatsapp"></i>CONVERSAR NO WHATSAPP
 									</a>
 								</li>
 								<li>
-									<p><i class="fa fa-facebook-official"></i> NOSSA PÁGINA NO FACEBOOK</p>
+									<p>NOSSA PÁGINA NO FACEBOOK</p>
 									<p class="descricao">Se comunique também pelo nosso Facebook, clicando abaixo você irá para nossa Página </p>
 									<a href="http://www.facebook.com/messages/thread/1431487607152407" class="btn btn-lg btn-primary fb"  onclick="ga('send', 'event', 'link','click', 'Chamou na Página do Facebook');">
 										<i class="fa fa-facebook-official"></i>MENSAGEM VIA FACEBOOK
@@ -523,8 +532,8 @@
 	        </div>
 	        <!-- container MODAL -->
 	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
-			  FECHAR
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+			  VOLTAR
         	</div>
 	    </div>
 	</div>

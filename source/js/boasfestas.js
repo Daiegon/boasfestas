@@ -9,10 +9,22 @@ $(document).ready(function(){
 		$('#cesta .titulo-cesta p').html(titulo);
 		$('#cesta .itens').html(itens+" ITENS");
 		$('#cesta .preco').html("<span>R$</span> "+preco[0]+"<small>,"+preco[1]+"</small>");
-		$('#cesta .tabela-cesta').load(cesta+".html");
+		$('#cesta .carnes').load(cesta+".html");
+		$('#cesta .padrao').load("padrao.html");
 
 		$('#cesta .seta').animate({bottom:'0'});
 		setTimeout(sumir, 5000);
+	});
+
+	$('.ver-lista').click(function(){
+		//alert();
+		$(this).fadeOut(300);
+		$('.padrao').slideDown(300);
+	});
+
+	$('.fechar').click(function(){
+		$('.padrao').hide();
+		$('.ver-lista').show();
 	});
 
 });
