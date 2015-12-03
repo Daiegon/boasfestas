@@ -27,6 +27,24 @@ $(document).ready(function(){
 		$('.ver-lista').show();
 	});
 
+	$('.linkPagina').click(function(){
+		var pagina = $(this).data('pagina');
+		var estilo = $(this).data('estilo');
+
+		if($('#pagina #estilo').hasClass('corPagamento')){
+			$('#pagina #estilo').removeClass('corPagamento');
+		}
+		if($('#pagina #estilo').hasClass('corEntrega')){
+			$('#pagina #estilo').removeClass('corEntrega');
+		}
+		if($('#pagina #estilo').hasClass('corAtendimento')){
+			$('#pagina #estilo').removeClass('corAtendimento');
+		}
+ 
+		$('#pagina #estilo').addClass(estilo);
+		$('#pagina .pagina-content').load(pagina+".html"); 
+	});
+
 });
 
 function sumir(){

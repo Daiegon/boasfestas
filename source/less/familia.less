@@ -261,29 +261,32 @@ body{
 		&.corCesta{
 			background-color: @principal;
 		}
-		&.corPagamento{
-			background-color: @secundaria;
-			.descricao{
+		#estilo{
+			&.corPagamento{
+				background-color: @secundaria;
+				.descricao{
+					color: @principal;
+					font-weight: bold;
+				}
+				.link{
+					color: @principal;
+					font-weight: bolder;
+				}
+				.destaca{
+					border-top: 2px dashed @principal;
+					border-bottom: 2px dashed @principal;
+				}
+			}
+			&.corEntrega{
+				background-color: @contraste;
 				color: @principal;
-				font-weight: bold;
 			}
-			.link{
-				color: @principal;
-				font-weight: bolder;
-			}
-			.destaca{
-				border-top: 2px dashed @principal;
-				border-bottom: 2px dashed @principal;
-			}
+			&.corAtendimento{
+				background-color: #058db5;
+				color: #fff;
+			}	
 		}
-		&.corEntrega{
-			background-color: @contraste;
-			color: @principal;
-		}
-		&.corAtendimento{
-			background-color: #058db5;
-			color: #fff;
-		}
+		
 		
 	}
     .close-modal {

@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="../source/css/familia.css">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	
+
 	<!-- Facebook Pixel Code -->
 	<script>
 	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -43,7 +43,7 @@
 	<!-- End Facebook Pixel Code -->
 </head>
 <body>
-	
+	<!--
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -52,6 +52,7 @@
 	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=556118257876433";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+	-->
 
 	<div class="container" id="content">
 		<header id="header">
@@ -153,21 +154,33 @@
 			<!-- /.row -->
 			<div class="row">
 				<div class="col-sm-4 text-center">
-					<a href="#pagamento" class="bloco pagamento portfolio-link" data-toggle="modal">
+					<a href="#pagina" class="bloco pagamento portfolio-link linkPagina" 
+					data-toggle="modal"
+					data-pagina="pagamento"
+					data-estilo="corPagamento"
+					onclick="ga('send', 'event', 'link','click', 'Formas Pagamento');">
 						<p><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Formas de Pagamento</p>
 					</a>
 					<!-- /.pagamento -->
 				</div>
 				<!-- /.col-sm-4 -->
 				<div class="col-sm-4 text-center">
-					<a href="#entrega" class="bloco entrega portfolio-link" data-toggle="modal">
+					<a href="#pagina" class="bloco entrega portfolio-link linkPagina" 
+					data-toggle="modal"
+					data-pagina="entrega"
+					data-estilo="corEntrega"
+					onclick="ga('send', 'event', 'link','click', 'Entrega Domicilio');">
 						<p><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Entrega em Domicílio</p>
 					</a>
 					<!-- /.pagamento -->
 				</div>
 				<!-- /.col-sm-4 -->
 				<div class="col-sm-4 text-center">
-					<a href="#atendimento" class="bloco atendimento portfolio-link" data-toggle="modal">
+					<a href="#pagina" class="bloco atendimento portfolio-link linkPagina"
+					data-toggle="modal"
+					data-pagina="fale-conosco"
+					data-estilo="corAtendimento"
+					onclick="ga('send', 'event', 'link','click', 'Fale Conosco');">
 						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Fale Conosco</p>
 					</a>
 					<!-- /.pagamento -->
@@ -193,10 +206,16 @@
 				</div>
 			</div>
 			<!-- /.row -->
+
+
+			<!-- FACEBOOK COMMENTS 
 			<div class="row">
 				<div class="fb-comments" data-href="http://www.kitalimentacao.com.br/boasfestas/familia/" data-numposts="10"></div>
 			</div>
+			-->
 			<!-- /.row -->
+
+			
 		</main>
 		<!-- /#main -->
 
@@ -265,17 +284,17 @@
 
 	                        	<ul>
 	                        		<li>
-	                        			<a href="#pagamento" class="link" data-toggle="modal">
+	                        			<a href="#pagamento" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Formas Pagamento');">
 											<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> VER FORMAS DE PAGAMENTO
 										</a>
 	                        		</li>
 	                        		<li>
-	                        			<a href="#entrega" class="link" data-toggle="modal">
+	                        			<a href="#entrega" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Entrega Domicilio');">
 											<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> VER ENTREGA EM DOMICÍLIO
 										</a>
 	                        		</li>
 	                        		<li>
-	                        			<a href="#atendimento" class="link" data-toggle="modal">
+	                        			<a href="#atendimento" class="link" data-toggle="modal"  onclick="ga('send', 'event', 'link','click', 'Fale Conosco');">
 											<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> FALE COM A GENTE
 										</a>
 	                        		</li>
@@ -309,239 +328,37 @@
 	</div>
 	<!-- CESTA -->
 
-	<!-- PAGAMENTO -->
-	<div class="portfolio-modal modal fade" id="pagamento" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content corPagamento">
-	        <div class="close-modal" data-dismiss="modal">
+	<!-- PAGINA -->
+	<div class="portfolio-modal modal fade" id="pagina" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-content">
+	    	<div id="estilo">
+		        <div class="close-modal" data-dismiss="modal">
+					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+					  VOLTAR
+		        </div> 
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-8 col-lg-offset-2">
+		                    <div class="modal-body pagina-content">
+								
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <!-- container MODAL -->
+		        <div class="close-modal" data-dismiss="modal">
 				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
 				  VOLTAR
-	        </div> 
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-8 col-lg-offset-2">
-	                    <div class="modal-body">
-	                    	<div class="titulo-cesta">
-		                        <h2>
-		                        	<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
-		                        	<p>FORMAS DE PAGAMENTO</p>
-		                        </h2>
-		                        <p class="descricao">Aceitamos como Pagamento, todas as formas Abaixo:</p>
-	                    	</div>
-							
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/sodexo.jpg" alt="sodexo" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/pagseguro.jpg" alt="pagseguro" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/boleto.jpg" alt="boleto" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/visa.jpg" alt="visa" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/master.jpg" alt="master" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/elo.jpg" alt="elo" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<img src="../source/images/bancos.jpg" alt="bancos" class="img-responsive">
-							</div>
-							<div class="col-sm-4 formas-pagamento">
-								<a href="../source/images/pagseguro-total.jpg" class="link">
-									<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> VER TODAS AS OPÇÕES ONLINE
-								</a>
-							</div>
-
-							<div class="clearfix"></div>
-							
-							<p class="descricao destaca">As Vendas terão início a partir do Dia 07 de Dezembro</p>
-
-							<div class="aviso dark">
-	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> OBSERVAÇÕES</h3>
-	                        	<p>Só entregaremos as Cestas seguindo as condições abaixo:</p>
-	                        	<ol>
-	                        		<li><strong>PARA PAGAMENTO VIA SODEXO:</strong>  Será Combinado com o Cliente o dia e hora da entrega e também para passar o Cartão Sodexo.</li>
-	                        		<li><strong>PARA PAGAMENTO ONLINE:</strong>  Apenas pelo PagSeguro e mesmo assim, confirmando a compra.</li>
-	                        		<li><strong>PARA PAGAMENTO A VISTA:</strong> Será Combinado com o Cliente o dia e hora da entrega.</li>
-	                        		<li><strong>PARA PAGAMENTO VIA DEPÓSITO:</strong> Confirmação da compra apenas pelo envio do Comprovante de Transferência para nosso email ou WhatsApp.</li>
-	                        	</ol>
-	                        </div>
-							
-							<div class="compartilha">
-								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-									<strong>Quer Ganhar Descontos?</strong></p>
-								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
-								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
-									ENVIAR VIA WHATSAPP
-								</a>
-								<div class="cleafix"></div>
-								<br>
-								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
-									COMPARTILHAR NO FACEBOOK
-								</a>
-							</div>
-
-	                    </div>
-	                </div>
-	            </div>
+	        	</div>
 	        </div>
-	        <!-- container MODAL -->
-	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-			  VOLTAR
-        	</div>
 	    </div>
 	</div>
-	<!-- PAGAMENTO -->
-
-	
-	<!-- ENTREGA -->
-	<div class="portfolio-modal modal fade" id="entrega" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content corEntrega">
-	        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-				  VOLTAR
-	        </div> 
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-8 col-lg-offset-2">
-	                    <div class="modal-body">
-	                    	<div class="titulo-cesta">
-		                        <h2>
-		                        	<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-		                        	<p>entrega em domicílio</p>
-		                        </h2>
-		                        <p class="descricao">Após a Confirmação da Compra pelos meios de pagamento, entraremos em contato para informar a Data e Hora da Entrega.</p>
-	                    	</div>
-							
-							<ul class="lista-descricao">
-								<li>
-									<p>DATAS</p>
-									<p class="descricao">Estamos nos Organizando para Entregar entre os dias 19 à 23 de Dezembro</p>
-								</li>
-								<li>
-									<p>ÁREAS DE ENTREGA</p>
-									<p class="descricao">Baixada Fluminense e Regiões próximas adjacentes.</p>
-								</li>
-								<li>
-									<p>SOBRE A NOSSA EMPRESA</p>
-									<p class="descricao">Nossa empresa já está há 20 anos no mercado atendendo aposentados e pensionistas, empresas, o governo e, neste ano de 2015, expandimos a atuação de nossos serviços e produtos para atender a todos os Consumidores.</p>
-								</li>
-							</ul>
-							
-							<div class="clearfix"></div>					
-
-							<div class="aviso dark">
-	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> DICA</h3>
-	                        	<p>Compartilhe com seus amigos, assim você faz com que sua região seja atendida e ainda CONCORRE A DESCONTOS</p>
-	                        </div>
-							
-							<div class="clearfix"></div>	
-
-							<div class="compartilha">
-								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-									<strong>Quer Ganhar Descontos?</strong></p>
-								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
-								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
-									ENVIAR VIA WHATSAPP
-								</a>
-								<div class="cleafix"></div>
-								<br>
-								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
-									COMPARTILHAR NO FACEBOOK
-								</a>
-							</div>
-
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <!-- container MODAL -->
-	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-			  VOLTAR
-        	</div>
-	    </div>
-	</div>
-	<!-- ENTREGA -->
-
-	<!-- atendimento -->
-	<div class="portfolio-modal modal fade" id="atendimento" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content corAtendimento">
-	        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-				  VOLTAR
-	        </div> 
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-8 col-lg-offset-2">
-	                    <div class="modal-body">
-	                    	<div class="titulo-cesta">
-		                        <h2>
-		                        	<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-		                        	<p>Fale com a gente</p>
-		                        </h2>
-		                        <p class="descricao destaca">Atendimento via Telefone fixo de Segunda a Sexta das 08h às 17h</p>
-	                    	</div>
-							
-							<ul class="lista-descricao">
-								<li>
-									<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> TELEFONES - 021</p>
-									<p class="descricao">2751-0214</p>
-									<p class="descricao">3755-0295</p>
-									<p class="descricao">2651-2304</p>
-								</li>
-								<li>
-									<p>WHATSAPP</p>
-									<p class="descricao">Clique no Botão abaixo para nos Chamar no WhatsApp</p>
-									<a href="intent://send/5521964299425#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="btn btn-lg btn-success wpp" onclick="ga('send', 'event', 'link','click', 'Chamou no WhatsApp');">
-										<i class="fa fa-whatsapp"></i>CONVERSAR NO WHATSAPP
-									</a>
-								</li>
-								<li>
-									<p>NOSSA PÁGINA NO FACEBOOK</p>
-									<p class="descricao">Se comunique também pelo nosso Facebook, clicando abaixo você irá para nossa Página </p>
-									<a href="http://www.facebook.com/messages/thread/1431487607152407" class="btn btn-lg btn-primary fb"  onclick="ga('send', 'event', 'link','click', 'Chamou na Página do Facebook');">
-										<i class="fa fa-facebook-official"></i>MENSAGEM VIA FACEBOOK
-									</a>
-								</li>
-							</ul>
-														
-							<div class="clearfix"></div>	
-
-							<div class="compartilha">
-								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-									<strong>Quer Ganhar Descontos?</strong></p>
-								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
-								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
-									ENVIAR VIA WHATSAPP
-								</a>
-								<div class="cleafix"></div>
-								<br>
-								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
-									COMPARTILHAR NO FACEBOOK
-								</a>
-							</div>
-
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <!-- container MODAL -->
-	        <div class="close-modal" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-			  VOLTAR
-        	</div>
-	    </div>
-	</div>
-	<!-- atendimento -->
+	<!-- PAGINA -->
 
 
 	<script type="text/javascript" src="../source/js/scripts.min.js"></script>
 
+	<!--
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -551,6 +368,7 @@
 	  ga('create', 'UA-27285313-4', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	-->
 	
 </body>
 </html>
