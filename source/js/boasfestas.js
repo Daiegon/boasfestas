@@ -25,6 +25,7 @@ $(document).ready(function(){
 	$('.fechar').click(function(){
 		$('.padrao').hide();
 		$('.ver-lista').show();
+		setTimeout(aparecer, 15000);
 	});
 
 	$('.linkPagina').click(function(){
@@ -56,3 +57,11 @@ function blinker() {
     $('.blink').fadeIn(500); 
 }
 setInterval(blinker, 1000);
+
+function aparecer(){
+	$('#ligacao').modal('show');
+}
+
+$(window).load(function(){
+    setTimeout(aparecer, 20000);
+});

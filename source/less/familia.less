@@ -10,7 +10,17 @@ body{
 	color: #fff;
 
 	font-size: 1em;
+
+	&.obrigado{
+		background-image: none;
+		//background-color: @principal;
+
+		#main{
+			padding-top: 0 !important;
+		}
+	}
 }
+
 
 #content{
 	position: relative;
@@ -284,6 +294,37 @@ body{
 			&.corAtendimento{
 				background-color: #058db5;
 				color: #fff;
+			}
+			&.corLigacao{
+				background-color: #fff;
+				color: @principal; 
+				.descricao{
+					font-weight: bold;
+				}
+				.formulario{
+					font-size: 1.5em;
+					border-top: 1px dashed @principal; 
+					padding: 15px 0 0 0;
+					input{
+						padding: 30px 15px;
+					}
+					.form-group{
+						margin: 0;
+					}
+					label{
+						text-transform: uppercase;
+					}
+					.load{
+						display: none;
+					}
+					p.privacidade{
+						clear: both;
+						margin: 40px 0 0 0;
+						padding: 15px 0 0 0;
+						border-top: 1px dashed @principal; 
+						text-align: justify; 
+					}
+				}
 			}	
 		}
 		
