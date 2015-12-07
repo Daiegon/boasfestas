@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Facebook Pixel Code -->
+	
 	<script>
 	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -40,20 +41,10 @@
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=819026031517306&ev=PageView&noscript=1"
 	/></noscript>
+	
 	<!-- End Facebook Pixel Code -->
 </head>
 <body>
-	<!--
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=556118257876433";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	-->
-
 	<div class="container" id="content">
 		<header id="header">
 			<div class="row">
@@ -207,15 +198,7 @@
 			</div>
 			<!-- /.row -->
 
-
-			<!-- FACEBOOK COMMENTS 
-			<div class="row">
-				<div class="fb-comments" data-href="http://www.kitalimentacao.com.br/boasfestas/familia/" data-numposts="10"></div>
-			</div>
-			-->
-			<!-- /.row -->
-
-			
+		
 		</main>
 		<!-- /#main -->
 
@@ -271,35 +254,40 @@
 								<p class="">5% de Desconto para pagamento à Vista</p>
 							</div>
 							
-							<p class="descricao destaca">As Vendas terão início a partir do Dia 07 de Dezembro</p>
+							<!-- <p class="descricao destaca">As Vendas terão início a partir do Dia 07 de Dezembro</p> -->
+							
+							<a href="#" class="pedido" onclick="ga('send', 'event', 'link','click', 'Fazer Pedido');">
+								<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+								Fazer meu Pedido
+							</a>
 
 	                        <div class="aviso">
 	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> ATENÇÃO</h3>
-	                        	<p>Todas as 4 Cestas, possuem <strong>OS MESMOS itens de Natal e Bebidas</strong>  em suas Composições.</p>
+	                        	<p>Todas os 4 Kits, possuem <strong>OS MESMOS itens de Natal e Bebidas</strong>  em suas Composições.</p> 
 	                        	<p><strong>O QUE DIFERENCIA UMA DA OUTRA SÃO AS CARNES E FRIOS</strong></p>
 	                        </div>
 
-	                        <div class="duvidas">
+	                        <!-- <div class="duvidas">
 	                        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Tire Suas Dúvidas</h4>
 
 	                        	<ul>
 	                        		<li>
-	                        			<a href="#pagamento" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Formas Pagamento');">
+	                        			<a href="#pagina" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Formas Pagamento');">
 											<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> VER FORMAS DE PAGAMENTO
 										</a>
 	                        		</li>
 	                        		<li>
-	                        			<a href="#entrega" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Entrega Domicilio');">
+	                        			<a href="#pagina" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Entrega Domicilio');">
 											<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> VER ENTREGA EM DOMICÍLIO
 										</a>
 	                        		</li>
 	                        		<li>
-	                        			<a href="#atendimento" class="link" data-toggle="modal"  onclick="ga('send', 'event', 'link','click', 'Fale Conosco');">
+	                        			<a href="#pagina" class="link" data-toggle="modal"  onclick="ga('send', 'event', 'link','click', 'Fale Conosco');">
 											<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> FALE COM A GENTE
 										</a>
 	                        		</li>
 	                        	</ul>
-	                        </div>
+	                        </div> -->
 
 	                        <div class="compartilha">
 								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
@@ -320,9 +308,9 @@
 	            </div>
 	        </div>
 	        <!-- container MODAL -->
-	        <div class="close-modal fechar" data-dismiss="modal">
+	        <div class="close-modal fechar fecharEspaco" data-dismiss="modal">
 			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-			  VOLTAR
+			  VER OUTROS KITS
         	</div>
 	    </div>
 	</div>
@@ -360,6 +348,10 @@
 	<div class="portfolio-modal modal fade" id="ligacao" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content">
 	    	<div id="estilo" class="corLigacao">
+	    		<div class="close-modal fechaLigacao">
+					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+					  VOLTAR AO SITE
+		        </div>
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-lg-8 col-lg-offset-2">
@@ -369,11 +361,12 @@
 								    	<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
 								    	<p>LIGAMOS PARA VOCÊ</p>
 								    </h2>
+									
 								    <p class="descricao">Para te dar uma melhor Satisfação e Segurança.</p>
 								    <p class="descricao">Deixe seu Contato abaixo:</p>
 								</div>
 
-								<div class="col-sm-12 formulario">
+								<div class="col-sm-12 formulario formPedido">
 									<form name="sentMessage" id="contactForm" novalidate>
 					                    <div class="row control-group">
 					                        <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -384,8 +377,8 @@
 					                    </div>
 					                    <div class="row control-group">
 					                        <div class="form-group col-xs-12 floating-label-form-group controls">
-					                            <label>Telefone: </label>
-					                            <input type="tel" class="form-control" placeholder="Telefone" id="telefone" required data-validation-required-message="Por favor informe o Número." >
+					                            <label>Telefone com DDD: </label>
+					                            <input type="tel" class="form-control" placeholder="Telefone com DDD" id="telefone" required data-validation-required-message="Por favor informe o Número." >
 					                            <p class="help-block text-danger"></p>
 					                        </div>
 					                    </div>
@@ -403,21 +396,82 @@
 					                <br> 
 
 					                <p class="privacidade"><small>Visite nossa <a href="http://www.kitalimentacao.com.br/politica-de-privacidade.html" title="Política de Privacidade" class="pol">Política de Privacidade</a> para saber sobre o cadastro de seus dados em nosso site</small></p>
+									
+									<br> 
+									
+									<p class="descricao">Se preferir, fale com um Atendente Online. Clique no Botão Azul, abaixo!</p>
 
+									<br><br>
 		           				</div>
 		        			</div>
 		        		</div>
 		        	</div>
 		        </div>
 		        <!-- container MODAL -->
-		        <div class="close-modal" data-dismiss="modal">
-					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-					  VOLTAR AO SITE
-		        </div>
+		        
 	        </div>
 	    </div>
 	</div>
 	<!-- LIGACAO -->
+
+
+	<!-- INFO -->
+	<div class="portfolio-modal modal fade" id="info" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-content">
+	    	<div id="estilo" class="corLigacao">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-8 col-lg-offset-2">
+		                    <div class="modal-body">
+								<div class="titulo-cesta">
+								    <h2>
+								    	<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+								    	<p>INICIAMOS AS VENDAS!</p>
+								    </h2>
+									
+									<br>
+
+								    <p class="descricao dark">MAS ANTES</p>
+								    <p class="descricao dark">Você precisa saber 3 pontos importantes:</p>
+								</div>
+								
+								<br><br>
+
+								<div class="col-sm-12 info">									
+									<div class="col-sm-4 text-center">
+										<div class="numero">1</div>
+										<p class="descricao">Qualquer dúvida, fale com um Atendente Online. Clique no Botão Azul, abaixo!</p>
+										
+									</div>
+									<!-- /.col-sm-4 -->
+
+									<div class="col-sm-4 text-center">
+										<div class="numero">2</div>
+										<p class="descricao">Ao Fazer seu Pedido Preencha os Dados básicos solicitados, para  entrarmos em contato.</p>
+									</div>
+									<!-- /.col-sm-4 -->
+
+									<div class="col-sm-4 text-center">
+										<div class="numero">3</div>
+										<p class="descricao"><strong>NENHUM</strong> dado de Pagamento é pedido pelo site. Não se preocupe.</p>
+									</div>
+									<!-- /.col-sm-4 -->
+
+									<br><br>
+		           				</div>
+		        			</div>
+		        		</div>
+		        	</div>
+		        </div>
+		        <!-- container MODAL -->
+		        <div class="close-modal fecharEspaco" data-dismiss="modal">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+				  VOLTAR AO SITE
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	<!-- INFO -->
 
 
 	<script type="text/javascript" src="../source/js/scripts.min.js"></script>
@@ -435,6 +489,13 @@
 	  ga('send', 'pageview');
 	</script>
 	
+
+	<!-- BEGIN JIVOSITE CODE {literal} -->
 	
+	<script type='text/javascript'>
+	(function(){ var widget_id = '87GJSOz0CQ';
+	var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+	
+	<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>

@@ -140,7 +140,7 @@ body{
 	}
 
 	footer{
-		padding: 15px 0;
+		padding: 15px 0 50px 0;
 		color: @principal;
 		font-size: 1.5em;
 	}
@@ -169,6 +169,27 @@ body{
 				letter-spacing: 3px;
 			}
 		}
+
+		.info{
+			.numero{
+				display: block;
+				//padding: 50px;
+				line-height: 2em;
+				font-weight: bolder;
+				width: 100px;
+				height: 100px;
+				font-size: 5em;
+				background-color: @secundaria;
+				color: #fff;
+				border-radius: 50%;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			.col-sm-4{
+				margin-bottom:40px; 
+			}
+		}
+		
 		.seta{
 			position: fixed;
 			font-size: 2em;
@@ -271,6 +292,19 @@ body{
 		&.corCesta{
 			background-color: @principal;
 		}
+	
+		.pedido{
+			padding: 30px 0;
+			margin: 20px 0;
+			display: block;
+			font-size: 2em;
+			text-transform: uppercase;
+			background-color: @secundaria;
+			color: #fff;
+			font-weight: bold;
+			border-bottom: 5px solid darken(@secundaria, 20%);
+		}
+
 		#estilo{
 			&.corPagamento{
 				background-color: @secundaria;
@@ -301,34 +335,8 @@ body{
 				.descricao{
 					font-weight: bold;
 				}
-				.formulario{
-					font-size: 1.5em;
-					border-top: 1px dashed @principal; 
-					padding: 15px 0 0 0;
-					input{
-						padding: 30px 15px;
-					}
-					.form-group{
-						margin: 0;
-					}
-					label{
-						text-transform: uppercase;
-					}
-					.load{
-						display: none;
-					}
-					p.privacidade{
-						clear: both;
-						margin: 40px 0 0 0;
-						padding: 15px 0 0 0;
-						border-top: 1px dashed @principal; 
-						text-align: justify; 
-					}
-				}
 			}	
-		}
-		
-		
+		}		
 	}
     .close-modal {
         //position: absolute;
@@ -348,6 +356,9 @@ body{
         	font-size: 1.5em;
         	margin: 0 15px 0 0;
         }
+    }
+    .fecharEspaco{
+    	padding-bottom: 60px;
     }
     .modal-backdrop {
     	opacity: 0;
@@ -407,5 +418,47 @@ hr{
 		border-bottom: 2px dashed #fff;
 		font-size: 3em;
 		padding: 20px 0;
+	}
+
+	&.dark{
+		color: #000;
+	}
+}
+
+.formulario{
+	font-size: 1.5em;
+	border-top: 1px dashed @principal; 
+	padding: 15px 0 0 0;
+	input{
+		padding: 30px 15px;
+		font-size: 1.8em;
+	}
+	.form-group{
+		margin-bottom: 20px;
+	}
+	label{
+		text-transform: uppercase;
+	}
+	.load{
+		display: none;
+	}
+	p.privacidade{
+		clear: both;
+		margin: 40px 0 30px 0;
+		padding: 15px 0 0 0;
+		border-top: 1px dashed @principal; 
+		text-align: justify; 
+	}
+}
+
+.help-block{
+	li{
+		list-style: none;
+		padding: 10px 5px;
+	}
+	&.text-danger{
+		background-color: #ea6767;
+		color: #6b0505;
+		font-weight: bolder;
 	}
 }

@@ -9,6 +9,7 @@ $(document).ready(function(){
 		$('#cesta .titulo-cesta p').html(titulo);
 		$('#cesta .itens').html(itens+" ITENS");
 		$('#cesta .preco').html("<span>R$</span> "+preco[0]+"<small>,"+preco[1]+"</small>");
+		$('#cesta .pedido').attr('href', 'pedido.php?cesta='+titulo);
 		$('#cesta .carnes').load(cesta+".html");
 		$('#cesta .padrao').load("padrao.html");
 
@@ -25,7 +26,11 @@ $(document).ready(function(){
 	$('.fechar').click(function(){
 		$('.padrao').hide();
 		$('.ver-lista').show();
-		setTimeout(aparecer, 15000);
+		setTimeout(aparecer, 1000);
+	});
+
+	$('.fechaLigacao').click(function(){
+		$('#ligacao').modal('hide');
 	});
 
 	$('.linkPagina').click(function(){
@@ -63,5 +68,10 @@ function aparecer(){
 }
 
 $(window).load(function(){
-    setTimeout(aparecer, 20000);
+	$('#info').modal('show');
+	
+	$('#seguro').modal('show');
+		
+	//setTimeout(aparecer, 20000);
+	//aparecer();
 });
