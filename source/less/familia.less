@@ -195,7 +195,8 @@ body{
 			font-size: 2em;
 			text-align: center;
 			padding: 15px 0;
-			bottom: -80px;
+			height: 100px;
+			bottom: 0px;
 			left: 0;
 			width: 100%;
 			background-color: @secundaria;
@@ -334,8 +335,11 @@ body{
 				background-color: #fff;
 				color: @principal; 
 				.close-modal{
-					background-color: @contraste;
+					background-color: @secundaria;
 					color: darken(@principal, 20%);
+					font-weight: bolder;
+					border-top: none;
+					border-bottom: 5px solid darken(@secundaria, 20%);
 				}
 				.descricao{
 					font-weight: bold;

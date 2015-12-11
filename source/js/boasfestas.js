@@ -55,7 +55,7 @@ $(document).ready(function(){
 });
 
 function sumir(){
-	$('#cesta .seta').animate({bottom:'-80px'});
+	$('#cesta .seta').animate({bottom:'-100px'});
 }
 
 function blinker() {
