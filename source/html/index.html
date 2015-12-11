@@ -9,6 +9,8 @@
 	<meta name="keywords" content="Cesta Básica, Cesta básica Rj, Cestas Básicas Preço, Kits de Natal">
 	<meta name="author" content="Kit Alimentação">
 
+	<meta http-equiv="expires" content = "-1" />
+
 	<meta property="og:url"         content="http://www.kitalimentacao.com.br/boasfestas/familia/" />
 	<meta property="og:type"        content="website" />
 	<meta property="og:title"       content="Cestas Especiais de Natal e Ano Novo" />
@@ -27,7 +29,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Facebook Pixel Code -->
-	
+	<!-- 
 	<script>
 	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -41,7 +43,7 @@
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=819026031517306&ev=PageView&noscript=1"
 	/></noscript>
-	
+	 -->
 	<!-- End Facebook Pixel Code -->
 </head>
 <body>
@@ -53,7 +55,7 @@
 				</div>
 				<!-- /.col-lg-12 -->
 
-				<div class="blink fixo">
+				<div class="blink seta-down fixo">
 					<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
 				</div>
 			</div>
@@ -78,6 +80,18 @@
 					</h3>
 				</div>
 				<!-- /.col-lg-12 -->
+				
+				<div id="blocoLigamos" class="col-md-6  col-md-offset-3 text-center">
+					<a href="#ligacao" class="bloco liga portfolio-link" data-toggle="modal"
+					onclick="ga('send', 'event', 'link','click', 'Ligamos para Você');">
+						<p>Ligamos para Você</p>
+
+
+						<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+						Clique aqui
+					</a>
+					<!-- /.cesta -->
+				</div>
 
 				<div class="col-sm-6 text-center">
 					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
@@ -240,7 +254,7 @@
 	                        	
 	                        </ul>
 							
-							<div class="close-modal ver-lista">
+							<div class="close-modal ver-lista" onclick="ga('send', 'event', 'link','click', 'Ver Itens Padrao');">
 								<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> 
 								VER ITENS PADRÃO
 							</div>
@@ -267,7 +281,7 @@
 	                        	<p><strong>O QUE DIFERENCIA UMA DA OUTRA SÃO AS CARNES E FRIOS</strong></p>
 	                        </div>
 
-	                        <!-- <div class="duvidas">
+	                        <div class="duvidas">
 	                        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Tire Suas Dúvidas</h4>
 
 	                        	<ul>
@@ -287,7 +301,7 @@
 										</a>
 	                        		</li>
 	                        	</ul>
-	                        </div> -->
+	                        </div>
 
 	                        <div class="compartilha">
 								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
@@ -348,7 +362,7 @@
 	<div class="portfolio-modal modal fade" id="ligacao" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content">
 	    	<div id="estilo" class="corLigacao">
-	    		<div class="close-modal fechaLigacao">
+	    		<div class="close-modal fechaLigacao" data-dismiss="modal">
 					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
 					  VOLTAR AO SITE
 		        </div>
@@ -362,7 +376,7 @@
 								    	<p>LIGAMOS PARA VOCÊ</p>
 								    </h2>
 									
-								    <p class="descricao">Para te dar uma melhor Satisfação e Segurança.</p>
+								    <p class="descricao">Para te dar um melhor Atendimento e Segurança.</p>
 								    <p class="descricao">Deixe seu Contato abaixo:</p>
 								</div>
 
@@ -419,6 +433,10 @@
 	<div class="portfolio-modal modal fade" id="info" tabindex="-1" role="dialog" aria-hidden="true">
 	    <div class="modal-content">
 	    	<div id="estilo" class="corLigacao">
+	    		<div class="close-modal" data-dismiss="modal" onclick="ga('send', 'event', 'link','click', 'Ver Kits e Preços');">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+				  VER OS KITS E PREÇOS
+	        	</div>
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-lg-8 col-lg-offset-2">
@@ -426,13 +444,12 @@
 								<div class="titulo-cesta">
 								    <h2>
 								    	<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-								    	<p>INICIAMOS AS VENDAS!</p>
+								    	<p>3 PONTOS IMPORTANTES</p>
 								    </h2>
-									
-									<br>
 
-								    <p class="descricao dark">MAS ANTES</p>
-								    <p class="descricao dark">Você precisa saber 3 pontos importantes:</p>
+								    <div class="blink seta-down">
+										<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+									</div>
 								</div>
 								
 								<br><br>
@@ -464,10 +481,7 @@
 		        	</div>
 		        </div>
 		        <!-- container MODAL -->
-		        <div class="close-modal fecharEspaco" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-				  VOLTAR AO SITE
-	        	</div>
+		        
 	        </div>
 	    </div>
 	</div>
@@ -478,7 +492,7 @@
 	<script src="../source/js/jqBootstrapValidation.js"></script>
     <script src="../source/js/contact_me_familia.js"></script>
 	
-	
+	<!-- 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -488,14 +502,14 @@
 	  ga('create', 'UA-27285313-4', 'auto');
 	  ga('send', 'pageview');
 	</script>
-	
+	 -->
 
 	<!-- BEGIN JIVOSITE CODE {literal} -->
-	
+	<!-- 
 	<script type='text/javascript'>
 	(function(){ var widget_id = '87GJSOz0CQ';
 	var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
-	
+	 -->
 	<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>

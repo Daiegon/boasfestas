@@ -30,7 +30,8 @@ $(document).ready(function(){
 	});
 
 	$('.fechaLigacao').click(function(){
-		$('#ligacao').modal('hide');
+		$('#blocoLigamos').fadeIn(300);
+		//$('#ligacao').modal('hide');
 	});
 
 	$('.linkPagina').click(function(){

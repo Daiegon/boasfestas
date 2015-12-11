@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<title>Pedido Realizado com Sucesso!</title>
+	<title>Kit Comprado com Sucesso!</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, inicial-scale=1, maximum-scale=1, user-scalable=no"/>
@@ -34,13 +34,23 @@
 
 	fbq('init', '819026031517306');
 	fbq('track', "PageView");
-	fbq('track', 'AddToCart');</script>
+	fbq('track', 'Purchase');</script>
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=819026031517306&ev=PageView&noscript=1"
 	/></noscript>
 	<!-- End Facebook Pixel Code -->
 </head>
 <body class="obrigado">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=556118257876433";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="container" id="content">
 		<header id="header">
 			<div class="row">
@@ -57,9 +67,9 @@
 			<div class="row">
 				<div class="col-lg-12 text-center titulo">
 					<hgroup>
-						<h2>PEDIDO REALIZADO COM SUCESSO!</h2>
+						<h1>COMPRA REALIZADA COM SUCESSO!</h1>
 						<br>
-						<h1>ENTRAREMOS EM CONTATO COM VOCÊ EM BREVE</h1>
+						<h2>Seu pedido está sendo processado, entraremos em contato!</h2>
 					</hgroup>
 
 					<hr>
@@ -70,7 +80,16 @@
 			<!-- /.row -->
 
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				
+				<div class="col-lg-6 col-lg-offset-3 text-center">
+					<h3>Curta nossa Página no Facebook!</h3>
+
+					<div class="fb-page" data-href="https://www.facebook.com/cestaskitalimentacao" data-tabs="timeline" data-width="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/cestaskitalimentacao"><a href="https://www.facebook.com/cestaskitalimentacao">Kit Alimentação - Cesta Básica</a></blockquote></div></div>
+				</div>
+				<!-- /.col-lg-6 -->
+				
+
+				<!-- <div class="col-lg-8 col-lg-offset-2">
 					<div class="compartilha text-center">
 						<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
 							<strong>Gostou dessa Ideia?</strong></p>
@@ -84,7 +103,7 @@
 							COMPARTILHAR NO FACEBOOK
 						</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<!-- /.row -->
 			
