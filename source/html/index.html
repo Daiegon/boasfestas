@@ -47,6 +47,14 @@
 	<!-- End Facebook Pixel Code -->
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=556118257876433";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="container" id="content">
 		<header id="header">
 			<div class="row">
@@ -54,10 +62,6 @@
 					<img src="../source/images/logo-kitalimentacao.png" alt="Kit Alimentação" >
 				</div>
 				<!-- /.col-lg-12 -->
-
-				<div class="blink seta-down fixo">
-					<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
-				</div>
 			</div>
 			<!-- /.row -->
 		</header>
@@ -67,147 +71,17 @@
 			<div class="row">
 				<div class="col-lg-12 text-center titulo">
 					<hgroup>
-						<h2>KITS ESPECIAIS DE</h2>
-						<h1>NATAL E ANO NOVO</h1>
-					</hgroup>
-
-					<hr>
-
-					<h3>
-						São 4 Composições para sua mesa de Final de Ano, 
-						<strong>CONFIRA ABAIXO</strong>
-						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
-					</h3>
+						<h2>ENCERRAMOS AS VENDAS</h2>
+						<h1>VOLTAMOS NO PROXIMO ANO</h1>
+					</hgroup>	
 				</div>
 				<!-- /.col-lg-12 -->
-				
-				<div id="blocoLigamos" class="col-md-6  col-md-offset-3 text-center">
-					<a href="#ligacao" class="bloco liga portfolio-link" data-toggle="modal"
-					onclick="ga('send', 'event', 'link','click', 'Ligamos para Você');">
-						<p>Ligamos para Você</p>
-
-
-						<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-						Clique aqui
-					</a>
-					<!-- /.cesta -->
-				</div>
-
-				<div class="col-sm-6 text-center">
-					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
-					data-cesta="feliz"
-					data-titulo="Kit Feliz"
-					data-itens="31"
-					data-preco="252,39"
-					onclick="ga('send', 'event', 'link','click', 'Kit Feliz');">
-						<p>Kit Feliz <small>31 itens</small></p>
-
-
-						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-						ver cesta
-					</a>
-					<!-- /.cesta -->
-				</div>
-				<!-- /.col-sm-6 -->
-				<div class="col-sm-6 text-center">
-					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
-					data-cesta="festa-01"
-					data-titulo="Kit festa 01"
-					data-itens="34"
-					data-preco="283,18"
-					onclick="ga('send', 'event', 'link','click', 'Kit Festa 01');">
-						<p>Kit Festa 01 <small>34 itens</small></p>
-
-						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-						ver cesta
-					</a>
-					<!-- /.cesta -->
-				</div>
-				<!-- /.col-sm-6 -->
-				<div class="col-sm-6 text-center">
-					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
-					data-cesta="festa-02"
-					data-titulo="Kit Festa 02"
-					data-itens="34"
-					data-preco="287,75"
-					onclick="ga('send', 'event', 'link','click', 'Kit Festa 02');">
-						<p>Kit Festa 02 <small>34 itens</small></p>
-
-
-						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-						ver cesta
-					</a>
-					<!-- /.cesta -->
-				</div>
-				<!-- /.col-sm-6 -->
-				<div class="col-sm-6 text-center">
-					<a href="#cesta" class="bloco cesta portfolio-link" data-toggle="modal"
-					data-cesta="especial"
-					data-titulo="Kit Especial"
-					data-itens="36"
-					data-preco="328,93"
-					onclick="ga('send', 'event', 'link','click', 'Kit Especial');">
-						<p>Kit Especial <small>36 itens</small></p>
-
-						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-						ver cesta
-					</a>
-					<!-- /.cesta -->
-				</div>
-				<!-- /.col-sm-6 -->
 			</div>
-			<!-- /.row -->
 			<div class="row">
-				<div class="col-sm-4 text-center">
-					<a href="#pagina" class="bloco pagamento portfolio-link linkPagina" 
-					data-toggle="modal"
-					data-pagina="pagamento"
-					data-estilo="corPagamento"
-					onclick="ga('send', 'event', 'link','click', 'Formas Pagamento');">
-						<p><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Formas de Pagamento</p>
-					</a>
-					<!-- /.pagamento -->
-				</div>
-				<!-- /.col-sm-4 -->
-				<div class="col-sm-4 text-center">
-					<a href="#pagina" class="bloco entrega portfolio-link linkPagina" 
-					data-toggle="modal"
-					data-pagina="entrega"
-					data-estilo="corEntrega"
-					onclick="ga('send', 'event', 'link','click', 'Entrega Domicilio');">
-						<p><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Entrega em Domicílio</p>
-					</a>
-					<!-- /.pagamento -->
-				</div>
-				<!-- /.col-sm-4 -->
-				<div class="col-sm-4 text-center">
-					<a href="#pagina" class="bloco atendimento portfolio-link linkPagina"
-					data-toggle="modal"
-					data-pagina="fale-conosco"
-					data-estilo="corAtendimento"
-					onclick="ga('send', 'event', 'link','click', 'Fale Conosco');">
-						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Fale Conosco</p>
-					</a>
-					<!-- /.pagamento -->
-				</div>
-				<!-- /.col-sm-4 -->
-			</div>
-			<!-- /.row -->
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="compartilha text-center">
-						<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-							<strong>Quer Ganhar Descontos?</strong></p>
-						<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
-						<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
-							ENVIAR VIA WHATSAPP
-						</a>
-						<div class="cleafix"></div>
-						<br>
-						<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary" onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
-							COMPARTILHAR NO FACEBOOK
-						</a>
-					</div>
+				<div class="col-lg-12 text-center">
+					<h3>Curta nossa Página no Facebook!</h3>
+
+					<div class="fb-page" data-href="https://www.facebook.com/cestaskitalimentacao" data-tabs="timeline" data-width="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/cestaskitalimentacao"><a href="https://www.facebook.com/cestaskitalimentacao">Kit Alimentação - Cesta Básica</a></blockquote></div></div>
 				</div>
 			</div>
 			<!-- /.row -->
@@ -225,258 +99,7 @@
 		</footer>
 	</div>
 	<!-- /.container -->
-
-	<!-- Portfolio Modals -->
-	<div class="portfolio-modal modal fade" id="cesta" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content corCesta">
-	        <div class="close-modal fechar" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-				  VOLTAR
-	        </div> 
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-8 col-lg-offset-2">
-	                    <div class="modal-body">
-	                    	<div class="titulo-cesta">
-		                        <h2>
-		                        	<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-		                        	<p></p>
-		                        </h2>
-		                        <p class="itens"></p>
-	                    	</div>
-
-	                        <div class="seta blink">
-								<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
-							</div>
-							
-	                        <hr class="hr2">
-	                        <ul class="tabela-cesta carnes">
-	                        	
-	                        </ul>
-							
-							<div class="close-modal ver-lista" onclick="ga('send', 'event', 'link','click', 'Itens Padrao');">
-								<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> 
-								VER ITENS PADRÃO
-							</div>
-
-	                        <ul class="tabela-cesta padrao">
-	                        	
-	                        </ul>
-
-							<div class="valores">
-								<p class="preco"></p>
-								<p class="">5% de Desconto para pagamento à Vista</p>
-							</div>
-							
-							<!-- <p class="descricao destaca">As Vendas terão início a partir do Dia 07 de Dezembro</p> -->
-							
-							<a href="#" class="pedido" onclick="ga('send', 'event', 'link','click', 'Fazer Pedido');">
-								<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-								Fazer meu Pedido
-							</a>
-
-	                        <div class="aviso">
-	                        	<h3><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> ATENÇÃO</h3>
-	                        	<p>Todas os 4 Kits, possuem <strong>OS MESMOS itens de Natal e Bebidas</strong>  em suas Composições.</p> 
-	                        	<p><strong>O QUE DIFERENCIA UMA DA OUTRA SÃO AS CARNES E FRIOS</strong></p>
-	                        </div>
-
-	                        <div class="duvidas">
-	                        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Tire Suas Dúvidas</h4>
-
-	                        	<ul>
-	                        		<li>
-	                        			<a href="#pagina" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Formas Pagamento');">
-											<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> VER FORMAS DE PAGAMENTO
-										</a>
-	                        		</li>
-	                        		<li>
-	                        			<a href="#pagina" class="link" data-toggle="modal" onclick="ga('send', 'event', 'link','click', 'Entrega Domicilio');">
-											<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> VER ENTREGA EM DOMICÍLIO
-										</a>
-	                        		</li>
-	                        		<li>
-	                        			<a href="#pagina" class="link" data-toggle="modal"  onclick="ga('send', 'event', 'link','click', 'Fale Conosco');">
-											<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> FALE COM A GENTE
-										</a>
-	                        		</li>
-	                        	</ul>
-	                        </div>
-
-	                        <div class="compartilha">
-								<p><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-									<strong>Quer Ganhar Descontos?</strong></p>
-								<p>Compartilhe com seus amigos, usando os Botões abaixo para espalhar essa Novidade!</p>
-								<a href="whatsapp://send?text=Oi, estou vendo aqui Cestas Especiais de Natal e Ano Novo. Voc&ecirc; tamb&eacute;m poderia dar uma olhada, &eacute; bem interessante. Clica aqui >> http://www.kitalimentacao.com.br/boasfestas/familia" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'link','click', 'Compartilhar - WhatsApp');">
-									ENVIAR VIA WHATSAPP
-								</a>
-								<div class="cleafix"></div>
-								<br>
-								<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.kitalimentacao.com.br/boasfestas/familia/" class="btn btn-lg btn-primary"  onclick="ga('send', 'event', 'link','click', 'Compartilhar - Facebook');">
-									COMPARTILHAR NO FACEBOOK
-								</a>
-							</div>
-
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <!-- container MODAL -->
-	        <div class="close-modal fechar fecharEspaco" data-dismiss="modal">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-			  VER OUTROS KITS
-        	</div>
-	    </div>
-	</div>
-	<!-- CESTA -->
-
-	<!-- PAGINA -->
-	<div class="portfolio-modal modal fade" id="pagina" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content">
-	    	<div id="estilo">
-		        <div class="close-modal" data-dismiss="modal">
-					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-					  VOLTAR
-		        </div> 
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-lg-8 col-lg-offset-2">
-		                    <div class="modal-body pagina-content">
-								
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <!-- container MODAL -->
-		        <div class="close-modal" data-dismiss="modal">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-				  VOLTAR
-	        	</div>
-	        </div>
-	    </div>
-	</div>
-	<!-- PAGINA -->
-
-
-	<!-- LIGACAO -->
-	<div class="portfolio-modal modal fade" id="ligacao" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content">
-	    	<div id="estilo" class="corLigacao">
-	    		<div class="close-modal fechaLigacao" data-dismiss="modal">
-					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-					  VOLTAR AO SITE
-		        </div>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-lg-8 col-lg-offset-2">
-		                    <div class="modal-body ligacao-content">
-								<div class="titulo-cesta">
-								    <h2>
-								    	<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-								    	<p>LIGAMOS PARA VOCÊ</p>
-								    </h2>
-									
-								    <p class="descricao">Para te dar um melhor Atendimento e Segurança.</p>
-								    <p class="descricao">Deixe seu Contato abaixo:</p>
-								</div>
-
-								<div class="col-sm-12 formulario formPedido">
-									<form name="sentMessage" id="contactForm" novalidate>
-					                    <div class="row control-group">
-					                        <div class="form-group col-xs-12 floating-label-form-group controls">
-					                            <label>Nome: </label>
-					                            <input type="text" class="form-control" placeholder="Nome" id="nome" required data-validation-required-message="Por favor digite o nome.">
-					                            <p class="help-block text-danger"></p>
-					                        </div>
-					                    </div>
-					                    <div class="row control-group">
-					                        <div class="form-group col-xs-12 floating-label-form-group controls">
-					                            <label>Telefone com DDD: </label>
-					                            <input type="tel" class="form-control" placeholder="Telefone com DDD" id="telefone" required data-validation-required-message="Por favor informe o Número." >
-					                            <p class="help-block text-danger"></p>
-					                        </div>
-					                    </div>
-			                        
-				                        <div class="load">
-				                        	<img src="../source/images/loading.gif" alt=""> 
-				                        </div>
-
-				                        <div class="form-group col-xs-12">
-				                            <button type="submit" id="cliqueCadastrar" class="btn btn-success btn-lg">LIGAR PARA MIM</button>
-				                        </div>
-
-					                </form>
-
-					                <br> 
-
-					                <p class="privacidade"><small>Visite nossa <a href="http://www.kitalimentacao.com.br/politica-de-privacidade.html" title="Política de Privacidade" class="pol">Política de Privacidade</a> para saber sobre o cadastro de seus dados em nosso site</small></p>
-									
-									<br> 
-									
-									<p class="descricao">Se preferir, fale com um Atendente Online. Clique no Botão Azul, abaixo!</p>
-
-									<br><br>
-		           				</div>
-		        			</div>
-		        		</div>
-		        	</div>
-		        </div>
-		        <!-- container MODAL -->
-		        
-	        </div>
-	    </div>
-	</div>
-	<!-- LIGACAO -->
-
-
-	<!-- INFO -->
-	<div class="portfolio-modal modal fade" id="info" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-content">
-	    	<div id="estilo" class="corLigacao">
-	    		<div class="close-modal" data-dismiss="modal" onclick="ga('send', 'event', 'link','click', 'Ver Kits e Preços');">
-				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-				  VER OS KITS E PREÇOS
-	        	</div>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-lg-8 col-lg-offset-2">
-		                    <div class="modal-body">
-								<div class="titulo-cesta">
-								    <h2>
-								    	<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-								    	<p>PONTO IMPORTANTE</p>
-								    </h2>
-
-								</div>
-								
-								<br><br>
-
-								<div class="col-sm-12 info">									
-									<div class="col-sm-12 text-center">
-										<p class="descricao">A qualquer momento que surgir uma dúvida, fale com um Atendente Online. É só clicar no Botão Azul, abaixo!</p>
-										
-									</div>
-									<!-- /.col-sm-4 -->
-
-									<br><br>
-		           				</div>
-		        			</div>
-		        		</div>
-		        	</div>
-		        </div>
-		        <!-- container MODAL -->
-		        
-	        </div>
-	    </div>
-	</div>
-	<!-- INFO -->
-
-
-	<script type="text/javascript" src="../source/js/scripts.min.js"></script>
-	<script src="../source/js/jqBootstrapValidation.js"></script>
-    <script src="../source/js/contact_me_familia.js"></script>
-	
-	
+		
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -486,14 +109,5 @@
 	  ga('create', 'UA-27285313-4', 'auto');
 	  ga('send', 'pageview');
 	</script>
-	
-
-	<!-- BEGIN JIVOSITE CODE {literal} -->
-	
-	<script type='text/javascript'>
-	(function(){ var widget_id = '87GJSOz0CQ';
-	var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
-	
-	<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>
