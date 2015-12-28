@@ -5,25 +5,46 @@ $cesta = $_GET['cesta'];
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<title>Faça seu Pedido</title>
+	<title>Kit Churrasco para seu Ano Novo</title>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, inicial-scale=1, maximum-scale=1, user-scalable=no"/>
-	<meta name="description" content="Kits e Cestas Básicas de Natal e Ano Novo">
-	<meta name="keywords" content="Cesta Básica, Cesta básica Rj, Cestas Básicas Preço, Kits de Natal">
-	<meta name="author" content="Kit Alimentação">
+	<meta name="viewport"    content="width=device-width, inicial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="description" content="Carne para o Churrasco do seu Ano Novo">
+	<meta name="keywords"    content="Cesta Básica, Cesta básica Rj, Cestas Básicas Preço, Kits de Carne">
+	<meta name="author"      content="Kit Alimentação">
 
-	<meta property="og:url"         content="http://www.kitalimentacao.com.br/boasfestas/familia/" />
+	<meta http-equiv="expires" content = "-1" />
+
+	<meta property="og:url"         content="http://www.kitalimentacao.com.br/boasfestas/churrasco" />
 	<meta property="og:type"        content="website" />
-	<meta property="og:title"       content="Cestas Especiais de Natal e Ano Novo" />
-	<meta property="og:description" content="Kits Boas Festas 2015 - Kit Alimentação" />
-	<meta property="og:image"       content="http://www.kitalimentacao.com.br/2014/wp-content/uploads/2015/01/popup.jpg" />
+	<meta property="og:title"       content="Carne para o Churrasco do seu Ano Novo" />
+	<meta property="og:description" content="Kit de Carne para Churrasco - Kit Alimentação" />
+	<meta property="og:image"       content="http://www.kitalimentacao.com.br/boasfestas/churrasco/thumb-churrasco.jpg" />
+
+	<!-- <meta property="fb:admins" content="100001906289208"/>
+	<meta property="fb:app_id" content="556118257876433" /> -->
 	
 	<!-- Android Lolipop Theme Color -->
-	<meta name="theme-color" content="#d91e48">
+	<meta name="theme-color" content="#fc9146">
 
 	<link rel="stylesheet" href="../source/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../source/css/familia.css">
+	<link rel="stylesheet" href="../source/css/carne.css">
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '819026031517306');
+	fbq('track', "PageView");
+	fbq('track', 'InitiateCheckout');</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=819026031517306&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 
 </head>
 <body class="obrigado">
@@ -115,7 +136,7 @@ $cesta = $_GET['cesta'];
 						    </div>
 
 						    <div class="form-group col-xs-12">
-						    	<input type="hidden" id="cesta" value="">
+						    	<input type="hidden" id="cesta" value="<?php echo $cesta ?>">
 						        <button type="submit" id="cliqueCadastrar" class="btn btn-success btn-lg">REALIZAR PEDIDO</button>
 						    </div>
 

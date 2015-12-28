@@ -18,11 +18,11 @@ var minifyHTML = require('gulp-minify-html');
 
 	// --CSS
 	gulp.task('css', function () {
-	  return gulp.src('source/less/familia.less')
+	  return gulp.src('source/less/carne.less')
 	    .pipe(less({ paths: [ 'source/less'] }))
 	    .pipe(autoprefixer())
 	    .pipe(minifyCSS())
-	    .pipe(rename('familia.css'))
+	    .pipe(rename('carne.css'))
 	    .pipe(gulp.dest('_build/source/css'))
 	    .pipe(browserSync.reload({stream:true}))
 	});

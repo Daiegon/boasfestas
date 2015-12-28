@@ -1,0 +1,479 @@
+// VARIAVEIS
+@principal: #fc9146;
+@secundaria: #8FC855;
+@contraste: #F7C72A;  
+
+body{
+	color: #fff;
+
+	font-size: 1em;
+
+	&.obrigado{
+		background-image: none;
+		//background-color: @principal;
+
+		#main{
+			padding-top: 0 !important;
+		}
+	}
+}
+
+#content{
+	position: relative;
+	
+	.logo{
+		margin: 20px 0 0 0;
+	}
+
+	.fixo{
+		position: fixed;
+		top: 305px;
+		z-index: 999;
+	}
+
+	#main{
+		min-height: 300px;
+		color: @principal;
+
+		.titulo{
+			margin: 0 0 30px 0;
+			hgroup{
+				h1{
+					margin: 0;
+					font-weight: bolder;
+				}
+				h2{
+					margin: 0;
+				}
+			}
+		}
+		
+		#blocoLigamos{ 
+			display: none;
+		}
+
+		.bloco{
+			display: block;
+			width: 100%;
+			font-size: 1.5em;
+			padding: 20px;
+			text-transform: uppercase;
+			line-height: 30px;
+			margin: 15px 0;
+			p{
+				font-size: 2em;
+				font-weight: bold;
+				border-bottom: 3px solid @contraste;
+				padding-bottom: 10px;
+				small{
+					display: block;
+					font-size: 0.5em;
+					letter-spacing: 3px;
+				}
+			}
+			span{
+				font-size: 1em;
+				margin: 0 5px 0 0;
+			}
+		}
+
+		.cesta{
+			background: @principal;
+			color: #fff;			
+			&:hover{
+				background: @contraste;
+				color: @principal;
+			}
+		}
+
+		.pagamento{
+			background: @secundaria;
+			color: #fff;
+			p{
+				span{
+					display: block; 
+					font-size: 2em;
+					margin: 15px 0;
+				}
+				border: none;
+			}		
+			&:hover{
+				background: darken(@secundaria, 40%);
+				color: #fff;
+			}
+		}	
+
+		.entrega{
+			background: @contraste;
+			color: #000;
+			p{
+				span{
+					display: block; 
+					font-size: 2em;
+					margin: 15px 0;
+				}
+				border: none;
+			}		
+			&:hover{
+				background: darken(@contraste, 20%);
+				color: #fff;
+			}
+		}	
+
+		.atendimento{
+			background: #058db5;
+			color: #fff;
+			p{
+				span{
+					display: block; 
+					font-size: 2em;
+					margin: 15px 0;
+				}
+				border: none;
+			}		
+			&:hover{
+				background: darken(#058db5, 20%);
+				color: #fff;
+			}
+		}	
+	}
+
+	footer{
+		padding: 15px 0 50px 0;
+		color: @principal;
+		font-size: 1.5em;
+	}
+}
+
+.portfolio-modal {
+	padding: 0 !important;
+	.modal-content {
+	    border-radius: 0; 
+	    background-clip: border-box;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: none;
+	    min-height: 100%;
+	    text-align: center;
+
+		.titulo-cesta{
+			h2 {
+		    	margin: 0;
+		    	font-size: 4em;
+		    	text-transform: uppercase;
+		    	font-weight: bolder;
+			}
+			.itens{
+				font-size: 2em;
+				letter-spacing: 3px;
+			}
+		}
+
+		.info{
+			.numero{
+				display: block;
+				//padding: 50px;
+				line-height: 2em;
+				font-weight: bolder;
+				width: 100px;
+				height: 100px;
+				font-size: 5em;
+				background-color: @secundaria;
+				color: #fff;
+				border-radius: 50%;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			.col-sm-4{
+				margin-bottom:40px; 
+			}
+		}
+
+		.valores{
+			font-size: 1.5em;
+			margin: 0 0 20px 0;
+			.preco{
+				padding: 10px 0 0 0;
+				border-top: 5px dotted darken(@principal, 20%);
+				font-size: 4.5em;
+				span{
+					font-size: 0.4em;
+				}
+				small{
+					font-size: 0.4em;
+				}
+			}
+		}
+
+		.aviso{
+			padding: 5px 20px;
+			background-color: @contraste;
+			color: @principal;
+			h3{
+				font-weight: bolder;
+				letter-spacing: 5px;
+			}
+			p{
+				font-size: 1.7em;
+				text-align: justify;
+			}
+			&.dark{
+				background-color: darken(@principal, 40%);
+				color: @contraste;
+			}
+			ol{
+				font-size: 1.5em;
+				text-align: justify;
+				padding-left: 15px;
+				li{
+					margin: 0 0 20px 0;
+					strong{
+						display: block;
+						font-size: 1.1em;
+					}
+				}
+			}
+		}
+
+		.duvidas{
+			margin: 20px 0 0 0;
+			h4{
+				font-size: 2em;
+				text-transform: uppercase;
+				span{
+					margin: 0 15px 0 0;
+				}
+			}
+			ul{
+				padding: 0;
+				list-style: none;
+				li{
+					a{
+						padding: 5px;
+						color: #fff;
+						margin: 20px 0;
+						border-bottom: 1px dashed #fff;
+					}
+				}
+			}
+		}
+	
+		.lista-descricao{
+			padding: 20px 0;
+			list-style: none;
+			border-top: 2px dashed @principal;
+			border-bottom: 2px dashed @principal;
+			li{
+				text-align: justify;
+				margin:0 0 30px 0;
+				p:first-child{
+					font-size: 2em;
+					font-weight: bolder;
+					border-bottom: 1px solid #fff;
+				}
+				span, i{
+					margin: 0 15px 0 0;	
+				}
+			}
+		}
+
+		&.corCesta{
+			background-color: @principal;
+		}
+	
+		.pedido{
+			padding: 30px 0;
+			margin: 20px 0;
+			display: block;
+			font-size: 2em;
+			text-transform: uppercase;
+			background-color: @secundaria;
+			color: #fff;
+			font-weight: bold;
+			border-bottom: 5px solid darken(@secundaria, 20%);
+		}
+
+		#estilo{
+			&.corPagamento{
+				background-color: @secundaria;
+				.descricao{
+					color: #fff;
+					font-weight: bold;
+				}
+				.link{
+					color: #000;
+					font-weight: bolder;
+				}
+				.destaca{
+					border-top: 2px dashed #fff;
+					border-bottom: none;
+				}
+			}
+			&.corEntrega{
+				background-color: @contraste;
+				color: #000;
+			}
+			&.corAtendimento{
+				background-color: #058db5;
+				color: #fff;
+			}
+			&.corLigacao{
+				background-color: #fff;
+				color: @principal; 
+				.close-modal{
+					background-color: @secundaria;
+					color: darken(@principal, 20%);
+					font-weight: bolder;
+					border-top: none;
+					border-bottom: 5px solid darken(@secundaria, 20%);
+				}
+				.descricao{
+					font-weight: bold;
+				}
+			}	
+		}		
+	}
+    .close-modal {
+        //position: absolute;
+        margin: 0;
+        width:100%;
+        padding: 20px 0;
+        background-color:darken(@principal, 20%);
+        border-top: 2px solid darken(@principal, 40%);
+        border-bottom: 2px solid darken(@principal, 40%);
+        color: #fff;
+        cursor: pointer;
+        font-size: 2em;
+        &:hover {
+            opacity: 0.3;  
+        }
+        span{
+        	font-size: 1.5em;
+        	margin: 0 15px 0 0;
+        }
+    }
+    .fecharEspaco{
+    	padding-bottom: 60px;
+    }
+    .modal-backdrop {
+    	opacity: 0;
+    	display: none;
+    }
+}
+
+.tabela-cesta{
+	font-size: 1.5em;
+	list-style: none;
+	margin: 0; padding: 0;
+	li{
+		padding: 15px 0 10px 0;
+		border-bottom: 1px dashed #fff;
+		&.categoria{
+			color: darken(@principal, 20%);
+			font-weight: bolder;
+			letter-spacing: 2px;
+			font-size: 2em;
+		}
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+	&.padrao{
+		display: none;
+	}
+}
+
+.compartilha{
+	padding: 20px 0;
+	font-size: 2em;
+	span{
+		display: block;
+		font-size: 3em;
+	}
+}
+
+hr{
+	border-top: 1px solid @principal;
+	&.hr2{
+		border-top: 3px solid @contraste;
+	}
+}
+
+.link{
+	padding: 30px;
+	display: block;
+	font-size: 2em;
+}
+
+.descricao{
+	font-size: 2em;
+	&.destaca{
+		border-top: 2px dashed #fff;
+		border-bottom: 2px dashed #fff;
+		font-size: 3em;
+		padding: 20px 0;
+	}
+
+	&.dark{
+		color: #000;
+	}
+}
+
+.formulario{
+	font-size: 1.5em;
+	border-top: 1px dashed @principal; 
+	padding: 15px 0 0 0;
+	input{
+		padding: 30px 15px;
+		font-size: 1.8em;
+	}
+	.form-group{
+		margin-bottom: 20px;
+	}
+	label{
+		text-transform: uppercase;
+	}
+	.load{
+		display: none;
+	}
+	p.privacidade{
+		clear: both;
+		margin: 40px 0 30px 0;
+		padding: 15px 0 0 0;
+		border-top: 1px dashed @principal; 
+		text-align: justify; 
+	}
+}
+
+.help-block{
+	li{
+		list-style: none;
+		padding: 10px 5px;
+	}
+	&.text-danger{
+		background-color: #ea6767;
+		color: #6b0505;
+		font-weight: bolder;
+	}
+}
+
+.seta-down{
+	width: 100%;
+	text-align: center;
+	font-size: 5em;
+	color: @principal;
+}	
+
+.seta{
+	position: fixed;
+	font-size: 2em;
+	text-align: center;
+	padding: 15px 0;
+	height: 100px;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	background-color: @secundaria;
+	z-index: 9;
+}

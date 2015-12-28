@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	$(".cesta").click(function(){
 		var cesta = $(this).data('cesta');
 		var titulo = $(this).data('titulo');
@@ -7,11 +6,11 @@ $(document).ready(function(){
 		var preco = $(this).data('preco').split(',');
 
 		$('#cesta .titulo-cesta p').html(titulo);
-		$('#cesta .itens').html(itens+" ITENS");
+		$('#cesta .itens').html(itens+" CARNES");
 		$('#cesta .preco').html("<span>R$</span> "+preco[0]+"<small>,"+preco[1]+"</small>");
 		$('#cesta .pedido').attr('href', 'pedido.php?cesta='+titulo);
-		$('#cesta .carnes').load(cesta+".html");
-		$('#cesta .padrao').load("padrao.html");
+		//$('#cesta .carnes').load(cesta+".html");
+		//$('#cesta .padrao').load("padrao.html");
 
 		$('#cesta .seta').animate({bottom:'0'});
 		setTimeout(sumir, 5000);
@@ -52,10 +51,12 @@ $(document).ready(function(){
 		$('#pagina .pagina-content').load(pagina+".html"); 
 	});
 
+	setTimeout(sumir, 3000);
+
 });
 
 function sumir(){
-	$('#cesta .seta').animate({bottom:'-100px'});
+	$('.seta').animate({bottom:'-100px'});
 }
 
 function blinker() {
@@ -69,10 +70,16 @@ function aparecer(){
 }
 
 $(window).load(function(){
-	$('#info').modal('show');
+	//$('#info').modal('show');
 	
 	$('#seguro').modal('show');
 		
 	//setTimeout(aparecer, 20000);
 	//aparecer();
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50) { //use `this`, not `document`
+        $('.fixo').fadeOut(500);
+    }
 });
